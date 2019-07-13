@@ -1,0 +1,5 @@
+https://github.com/praveenjune17/Neural-Machine-Translation-English-Tamil-model/raw/master/en_tam_parallel_text_test.tar.gz 2668747 96445ac559fe636a5f2fb72e5cfd4666b41be6418af90b5f32064b14198eda8c
+https://github.com/praveenjune17/Neural-Machine-Translation-English-Tamil-model/raw/master/en_tam_parallel_text_train_split1.tar.gz 14680064 6bbfa3c3569f233af2643c472f19fcf3a89e227c579a068ff6b8618de6707ac2
+https://github.com/praveenjune17/Neural-Machine-Translation-English-Tamil-model/raw/master/en_tam_parallel_text_train_split2.tar.gz 14680064 fff1e04cfbf4d191c209e45bed5564c103af189b4c5919bc71233d0b629808fe
+https://github.com/praveenjune17/Neural-Machine-Translation-English-Tamil-model/raw/master/en_tam_parallel_text_train_split3.tar.gz 3703446 ed41f24167613e7180391a92f64c9eb7197bae19766b89fdf5ba06557eb999f0
+https://github.com/praveenjune17/Neural-Machine-Translation-English-Tamil-model/raw/master/en_tam_parallel_text_valid.tar.gz 2577056 77d56e142ac124b7fa3ad33283239a3aeb73eacc793de15fd34f0882ead21b25
