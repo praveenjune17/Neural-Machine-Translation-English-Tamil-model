@@ -1,0 +1,113 @@
+{
+  "citation": "\\  \n@inproceedings {biblio:RaBoMorphologicalProcessing2012,\n\ttitle = {Morphological Processing for English-Tamil Statistical Machine Translation},\n\tauthor = {Loganathan Ramasamy and Ond{\u000b{r}}ej Bojar and Zden{\u000b{e}}k {\u000b{Z}}abokrtsk{'{y}}},\n\tyear = {2012},\n\tpages = {113--122},\n\tBooktitle = {Proceedings of the Workshop on Machine Translation and Parsing in Indian Languages ({MTPIL}-2012)},\n}\n\n@InProceedings{TIEDEMANN12.463,\n  author = {J\ufffdrg Tiedemann},\n  title = {Parallel Data, Tools and Interfaces in OPUS},\n  booktitle = {Proceedings of the Eight International Conference on Language Resources and Evaluation (LREC'12)},\n  year = {2012},\n  month = {may},\n  date = {23-25},\n  address = {Istanbul, Turkey},\n  editor = {Nicoletta Calzolari (Conference Chair) and Khalid Choukri and Thierry Declerck and Mehmet Ugur Dogan and Bente Maegaard and Joseph Mariani and Jan Odijk and Stelios Piperidis},\n  publisher = {European Language Resources Association (ELRA)},\n  isbn = {978-2-9517408-7-7},\n  language = {english}\n }\t \n                                        \nhttps://github.com/joshua-decoder/indian-parallel-corpora/blob/master/LICENSE\n\t\t\t\t\t\t\t\t\t\t\n",
+  "description": "This corpus is a collection of english and tamil parallel text extracted 3 sources.\nAll the three were merged into a single file and cleaned.The various data cleaning steps were\na)Removed duplicates lines\nb)Removed lines containing html tags\nc) Removed empty lines and lines which contains an empty english or tamil translation\nd) Manually inspected and removed junk characters\nThere are total of 370,000 (roughly) lines of text which were split to train, validation and test sets. \nScript used for data cleaning :- https://colab.research.google.com/drive/1AViiS_4-ClngwZ4bKYbmlq3cVAnNHCk0#scrollTo=MWn-AuohbfXI\n\nNote:-\nFor dataset-3, the data was created by non-expert translators hired over Mechanical Turk and the other \ndatasets were created from extracting text from movie subtitles, Bible, Quran, cinema and news websites so the quality of translations are of mixed.\nHowever, it should be useful enough to get you started training models.\n\nReference for dataset 1 :- http://ufal.mff.cuni.cz/~ramasamy/parallel/html/\nReference for dataset 2 :- http://opus.nlpl.eu/\nReference for dataset 3 :- https://github.com/joshua-decoder/indian-parallel-corpora\n",
+  "location": {
+    "urls": [
+      "http://ufal.mff.cuni.cz/~ramasamy/parallel/html/",
+      "http://opus.nlpl.eu/",
+      "https://github.com/joshua-decoder/indian-parallel-corpora"
+    ]
+  },
+  "name": "en_tam_parallel_text",
+  "schema": {
+    "feature": [
+      {
+        "name": "input",
+        "type": "BYTES"
+      },
+      {
+        "name": "target",
+        "type": "BYTES"
+      }
+    ]
+  },
+  "sizeInBytes": "38309377",
+  "splits": [
+    {
+      "name": "test",
+      "numShards": "1",
+      "statistics": {
+        "features": [
+          {
+            "bytesStats": {
+              "commonStats": {
+                "numNonMissing": "26000"
+              }
+            },
+            "name": "input",
+            "type": "BYTES"
+          },
+          {
+            "bytesStats": {
+              "commonStats": {
+                "numNonMissing": "26000"
+              }
+            },
+            "name": "target",
+            "type": "BYTES"
+          }
+        ],
+        "numExamples": "26000"
+      }
+    },
+    {
+      "name": "train",
+      "numShards": "2",
+      "statistics": {
+        "features": [
+          {
+            "bytesStats": {
+              "commonStats": {
+                "numNonMissing": "324196"
+              }
+            },
+            "name": "input",
+            "type": "BYTES"
+          },
+          {
+            "bytesStats": {
+              "commonStats": {
+                "numNonMissing": "324196"
+              }
+            },
+            "name": "target",
+            "type": "BYTES"
+          }
+        ],
+        "numExamples": "324196"
+      }
+    },
+    {
+      "name": "validation",
+      "numShards": "1",
+      "statistics": {
+        "features": [
+          {
+            "bytesStats": {
+              "commonStats": {
+                "numNonMissing": "25245"
+              }
+            },
+            "name": "input",
+            "type": "BYTES"
+          },
+          {
+            "bytesStats": {
+              "commonStats": {
+                "numNonMissing": "25245"
+              }
+            },
+            "name": "target",
+            "type": "BYTES"
+          }
+        ],
+        "numExamples": "25245"
+      }
+    }
+  ],
+  "supervisedKeys": {
+    "input": "input",
+    "output": "target"
+  },
+  "version": "0.1.0"
+}
